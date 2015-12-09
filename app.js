@@ -1,5 +1,20 @@
 
 var logger = require('./lib/logger');
-var nest   = require('./lib/nest');
+var mobilePresence = require('./lib/mobile-presence');
 
-nest.updatePresence('home');
+var nest   = require('./lib/nest');
+setInterval(function() { 
+  var new_presence     = mobilePresence.getPresence();
+  var current_presence = nest.getPresence();
+
+  logger.debug( 'NEW: ' + new_presence + ' / CURRENT: ' + current_presence );
+  if ( new_presence != current_presence ) { 
+    logger.debug( 'Updating to new presence ' + new_presence );
+    nest.updatePresence( new_presence );
+  }
+
+}, 60000);
+
+mobilePresence.monitor();
+
+

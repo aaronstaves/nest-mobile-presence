@@ -26,6 +26,7 @@
     "config": "^1.17.1",
     "log4js": "^0.6.29",
     "request": "^2.67.0",
-    "request-promise": "^1.0.2"
+    "request-promise": "^1.0.2",
+    "ping": "^0.1.10"
   }
 }

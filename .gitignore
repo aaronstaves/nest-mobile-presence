@@ -27,3 +27,5 @@ build/Release
 node_modules
 
 *.swp
+*.swo
+config/default.json

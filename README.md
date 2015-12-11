@@ -31,7 +31,7 @@ Still haven't figured out a good way to do this.  Any suggestions are welcome!  
 
 
 ```
-1d [pi@raspberrypi:~/src/nest-mobile-presence] node app.js
+node app.js
 [2015-12-11 19:51:31.974] [WARN] [default] - Configuration property "access_token" is not defined
 [2015-12-11 19:51:32.002] [ERROR] [default] - Configuration property "auth_code" is not defined
 [2015-12-11 19:51:32.006] [ERROR] [default] - Visit https://home.nest.com/login/oauth2?client_id=<your_client_id>&state=STATE to obtain an auth_code and place it in config/default.json
@@ -47,3 +47,6 @@ Visit that URL and you will be presented with an 8 digit alphanumeric PIN.  Ente
 ```
 
 Once that's entered, just run the app and everything **should** fall into place! 
+```
+node app.js
+```

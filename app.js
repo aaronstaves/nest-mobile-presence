@@ -13,7 +13,7 @@ setInterval(function() {
     nest.updatePresence( new_presence );
   }
 
-}, 60000);
+}, 30000);
 
 mobilePresence.monitor();
 

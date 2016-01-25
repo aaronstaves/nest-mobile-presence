@@ -1,5 +1,6 @@
 {
   "client_id"        : "CLIENT_ID",
   "client_secret"    : "CLIENT_SECRET",
-  "ip_addresses": ["123.456.789.254", "127.0.0.1" ]
+  "ip_addresses"     : ["123.456.789.254", "127.0.0.1"],
+  "poll_interval_ms" : "30000"
 }

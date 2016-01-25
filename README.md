@@ -21,6 +21,7 @@ Next edit the values in default.json with your editor of choice
 * **client_id** - Your application's Product ID
 * **client_secret** - Your application's Product Secret
 * **ip_addresses** - an **array** of ip addresses you wish to monitor (static IP of your mobile devices)
+* **poll_interval_ms** - The time between API checks and device polls, in milliseconds (default 30000)
 
 ```
 vi default.json

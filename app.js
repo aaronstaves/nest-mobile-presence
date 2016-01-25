@@ -1,8 +1,19 @@
-
+var config = require('config');
 var logger = require('./lib/logger');
 var mobilePresence = require('./lib/mobile-presence');
 
 var nest   = require('./lib/nest');
+
+function _init() {
+  try {
+    interval = config.get('poll_interval_ms');
+  }
+  catch (e) {
+    logger.error(e.message);
+    process.exit();
+  }
+}
+
 setInterval(function() { 
   var new_presence     = mobilePresence.getPresence();
   var current_presence = nest.getPresence();
@@ -13,7 +24,7 @@ setInterval(function() {
     nest.updatePresence( new_presence );
   }
 
-}, 60000);
+}, interval);
 
 mobilePresence.monitor();
 

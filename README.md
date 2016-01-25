@@ -4,7 +4,7 @@ sets nest value to Home/Away based on presence of mobile device(s) on the networ
 ## Installation
 
 ```
-git clone git@github.com:aaronstaves/nest-mobile-presence.git`
+git clone git@github.com:aaronstaves/nest-mobile-presence.git
 cd nest-mobile-presence
 npm install
 ```

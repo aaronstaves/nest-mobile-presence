@@ -42,7 +42,7 @@ Visit that URL and you will be presented with an 8 digit alphanumeric PIN.  Ente
 {
   "auth_code": "ABC1DEF2",
   "client_id": "<your_client_id>",
-	"client_secret": "<your_client_secret"
+	"client_secret": "<your_client_secret>"
 }
 ```
 

@@ -26,7 +26,7 @@ Next edit the values in default.json with your editor of choice
 vi default.json
 ```
 
-### Authoriaztion
+### Authorization
 Still haven't figured out a good way to do this.  Any suggestions are welcome!  After the first  run, you should be presented with your PIN authoraization URL:
 
 

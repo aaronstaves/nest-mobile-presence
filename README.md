@@ -4,7 +4,7 @@ sets nest value to Home/Away based on presence of mobile device(s) on the networ
 ## Installation
 
 ```
-git clone git@github.com:aaronstaves/nest-mobile-presence.git`
+git clone git@github.com:aaronstaves/nest-mobile-presence.git
 cd nest-mobile-presence
 npm install
 ```
@@ -21,12 +21,13 @@ Next edit the values in default.json with your editor of choice
 * **client_id** - Your application's Product ID
 * **client_secret** - Your application's Product Secret
 * **ip_addresses** - an **array** of ip addresses you wish to monitor (static IP of your mobile devices)
+* **poll_interval_ms** - The time between API checks and device polls, in milliseconds (default 30000)
 
 ```
 vi default.json
 ```
 
-### Authoriaztion
+### Authorization
 Still haven't figured out a good way to do this.  Any suggestions are welcome!  After the first  run, you should be presented with your PIN authoraization URL:
 
 
@@ -42,7 +43,7 @@ Visit that URL and you will be presented with an 8 digit alphanumeric PIN.  Ente
 {
   "auth_code": "ABC1DEF2",
   "client_id": "<your_client_id>",
-	"client_secret": "<your_client_secret"
+	"client_secret": "<your_client_secret>"
 }
 ```
 
